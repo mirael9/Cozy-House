@@ -7,12 +7,12 @@
     background-position: 50% 50%;
 
     &__wrap {
-        min-height: calc(100hv - 170px);
+        min-height: calc(100vh - 170px);
         display: flex;
         align-items: center;
         padding: 50px 0;
-        @include b(768) {
-            min-height: calc(100hv - 100px);
+        @include b  (768) {
+            min-height: calc(100vh - 100px);
         }
     }
 

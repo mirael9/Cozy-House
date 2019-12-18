@@ -69,6 +69,15 @@ p {
     }
 }
 
+.clearfix {
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: " ";
+    clear: both;
+}
+
 .main  {
 
     .main__container {
@@ -86,26 +95,25 @@ p {
             max-width: 420px;
             float: right;
             padding: 0;
-            font-family: 'Georgia';
         }
 
         .about__title {
             padding: 0 0 35px;
             font-size: 35px;
             letter-spacing: 3px;
-            color: #545454;
+            color: $main-color;
+            font-family: $georgia;
         }
 
-        .about__text1 {
+        .about__text {
             font-size: 15px;
             padding: 0 0 30px;
+            font-family: $arial;
+            color: $second-color;
+
         }
 
         .about__picture {
             float: left;
         }
-
-
-
-
 }
