@@ -1,0 +1,82 @@
+.our-friends {
+    padding: 70px 0;
+    background-color: #f6f6f6;
+
+    .caption {
+        max-width: 410px;
+        margin: 0 auto 70px;
+        text-align: center;
+    }
+
+    &__wrap {
+        max-width: 910px;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        display: flex;
+        margin: 0 -25px;
+    }
+
+    &__item {
+        width: 33.33%;
+        padding: 0 25px;
+    }
+
+    &__box {
+        background-color: #fafafa;
+        border-radius: 5px;
+        padding: 10px 10px 25px;
+    }
+
+    &__img {
+        height: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__name {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__more {
+        width: 188px;
+        margin: 0 auto;
+        
+    }
+
+    &__btn {
+        width: 188px;
+        margin: 0 auto;
+    }
+
+    &__outer {
+        position: relative;
+    }
+
+    .button-next {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        border-radius: 5px;
+    }
+
+    .button-prev {
+
+    }
+}

@@ -80,16 +80,17 @@ p {
 
 .main  {
 
-    .main__container {
+    &__container {
         max-width: 1200px;
         padding: 0 15px;
         margin: 0 auto;
-    }
+
         .about {
             max-width: 920px;
             margin: 0 auto;
             padding: 90px 0;
         }
+
         .about__wrapper {
             display: block;
             max-width: 420px;
@@ -110,10 +111,29 @@ p {
             padding: 0 0 30px;
             font-family: $arial;
             color: $second-color;
-
         }
 
         .about__picture {
             float: left;
         }
+    }
 }
+
+.caption {
+    font-size: 35px;
+    display: block;
+    line-height: 1.29;
+    letter-spacing: 2px;
+    @include b (768) {
+        font-size: 25px;
+    }
+}
+
+.button-next,
+.button-prev {
+    width: 50px;
+    height: 50px;
+}
+
+
+
