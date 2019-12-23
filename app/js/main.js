@@ -1,9 +1,9 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.js-our-friends', {
     slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-  
+    slidesPerGroup: 3,
+    loop: true,
+    navigation: {
+        nextEl: '.button__next',
+        prevEl: '.button__prev',
+    }
+    });

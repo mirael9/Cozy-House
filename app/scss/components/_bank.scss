@@ -1,0 +1,66 @@
+.bank {
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 75px;
+        padding-bottom: 85px;
+
+        img {
+            float: left;
+            margin: 20px 0 0 0;
+        }
+    }
+
+    &__wrapper {
+        width: 420px;
+        text-align: left;
+        float: left;
+        padding-left: 70px;
+    }  
+    &__title {
+        font-family: 'Georgia';
+        color: #545454;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding: 0 0 25px;
+    }
+    
+    &__info {
+        font-family: 'Georgia';
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    &__text {
+        font-size: 12px;
+        // padding: 0 0 30px;
+        font-style: italic;
+        font-family: $arial;
+        color: #b2b2b2;
+        margin: 15px 0 0;
+    }
+    
+    &__card-number-link {
+        background-color: #f1cdb3;
+        border-radius: 10px;
+        padding: 13px;
+        display: inline-block;
+        
+        &:before {
+            content: '';
+            background-image: url(../../img/credit-card.svg);
+            width: 30px;
+            height: 26px;
+            display: inline-block;
+            background-size: 100%;
+            vertical-align: middle;
+            margin: 0 10px 0 0;
+    
+        }   
+    }
+}

@@ -9,8 +9,6 @@
 </head>
 <body>
 
-    <div class="wrapper">
-
       <div class="heading" style="background-image: url(./img/dogback.jpg);">
         <header class="header">
           <div class="container">
@@ -60,10 +58,9 @@
           </div>
         </div>
       </div>
-
+      
       <main class="main">
-        <div class="main__container">
-          <section class="about clearfix">
+          <section class="about container clearfix">
             <div class="about__picture">
                 <img src="./img/dogcat.png">
             </div>
@@ -79,8 +76,9 @@
 
           <section class="our-friends">
             <div class="container">
-              <span class="caption">Our friends who are looking for a house</span>
-              <div class="our-friends__wrap swiper-container js-our-friends">
+              <span class="caption">Our friends who <br> are looking for a house</span>
+              <div class="our-friends__outer">
+                <div class="our-friends__wrap swiper-container js-our-friends">
                 <div class="our-friends__inner swiper-wrapper">
                   <div class="our-friends__item swiper-slide">
                     <div class="our-friends__box">
@@ -90,8 +88,8 @@
                     <span class="our-friends__name">Katrine</span>
                     <div class="our-friends__more">
                       <a href="#" class="btn btn--border">Learn More</a>
+                    </div>  
                     </div>
-                  </div>
                   </div>
                   <div class="our-friends__item swiper-slide">
                     <div class="our-friends__box">
@@ -116,12 +114,13 @@
                   </div>
                   </div>
                 </div>
-              </div>
-              <div class="button__next js-our-friends-next">
+                </div>
+                <div class="button__next js-our-friends-next">
                 <span></span>
-              </div>
-              <div class="button__prev js-our-friends-prev">
+                </div>
+                <div class="button__prev js-our-friends-prev">
                 <span></span>
+                </div>
               </div>
               <div class="our-friends__btn">
                 <a href="#" class="btn">Get to know the rest</a>
@@ -132,39 +131,60 @@
           <section class="icons">
             <div class="icons__container">
               <div class="icons__wrap">
-                <h3 class="icons__title">Than you can help
+                <h3 class="icons__title">Than you can help <br>  
                   our shelter</h3>
                 <ul class="icons__list">
-                  <li class="">Pet food</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
-                  <li class="">Transportation</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
-                  <li class="">Toys</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
-                  <li class="">Bowls and cups</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
-                  <li class="">Shampoos</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
-                  <li class="">Vitamins</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
-                  <li class="">Medicines</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
-                  <li class="">Collars / leashes</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
-                  <li class="">Sleeping area</li>
-                    <img src="./img/SVG Icon/ambulance.svg">
+                  <li><img src="./img/SVG Icon/cat-food.svg">Pet food</li><li><img src="./img/SVG Icon/ambulance.svg">Transportation</li><li>
+                    <img src="./img/SVG Icon/ball.svg">Toys</li><li>
+                    <img src="./img/SVG Icon/bowl.svg">Bowls and cup</li><li>
+                    <img src="./img/SVG Icon/shampoo.svg">Shampoos</li><li>
+                    <img src="./img/SVG Icon/pills.svg">Vitamins</li><li>
+                    <img src="./img/SVG Icon/syringe.svg">Medicines</li><li>
+                    <img src="./img/SVG Icon/leash.svg">Collars / leashes</li><li>
+                    <img src="./img/SVG Icon/cat.svg">Sleeping area</li>
                 </ul>
               </div>
             </div>
           </section>
 
-        </div>
+          <section class="bank">
+            <div class="bank__container clearfix">
+              <img src="./img/dogcard.png">
+              <div class="bank__wrapper">
+                <h3 class="bank__title">In addition, you <br>
+                  can make a donation</h3>
+                <p class="bank__info">Name of the bank / Type of bank account</p>
+                <a href="#" class="bank__card-number-link">8380 2880 8028 8791 7435</a>
+                <p class="bank__text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              </div>
+            </div>
+          </section>
       </main>
 
-    </div>
-   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="js/libs.min.js"></script> -->
-    <script src="js/libs.min.js"></script>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <section class="footer__section">
+            <div class="contacts__container">
+              <h3 class="contacts__title">For questions and suggestions</h3>
+              <ul class="contacts__address">
+                <li><a class="clearfix" href="#"><img src="./img/mail.svg"> email@shelter.com</a></li>
+                <li><a class="clearfix" href="#"><img src="./img/telephone.svg"> +13 674 567 75 54</a></li>
+              </ul>
+            </div>
+            <div class="contacts__container">
+              <h3 class="contacts__title">We are waiting for your visit</h3>
+              <ul class="contacts__address">
+                <li><a class="clearfix" href="#"><img src="./img/pin.svg"> Boston,  Central Street, 1st (Entrance from the store) </a></li>
+                <li><a class="clearfix" href="#"><img src="./img/pin.svg">London,South Park,18st</a></li>
+              </ul>
+            </div> 
+            <img class="footer-dog" width="280px" src="./img/footer-dog.png" alt="">
+          </section>
+        </div>
+      </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script> 
 </body>
 </html>
