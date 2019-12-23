@@ -9,8 +9,9 @@
     }
 
     &__section {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
+        padding: 0 20px;
         padding-top: 75px;
         display: flex;
         justify-content: space-between;

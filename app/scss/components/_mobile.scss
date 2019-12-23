@@ -1,0 +1,88 @@
+@media screen and (max-width:768px) {
+
+    .bank__container {
+        width: 100%;
+    }
+
+    .footer__section {
+        width: 100%;
+        display: block;
+        padding-top: 30px;
+    }
+
+    .heading {
+        min-height: auto;
+    }
+
+    .heading__wrap {
+        min-height: auto;
+    }
+
+    .main .about__picture {
+        float: none;
+        text-align: center;
+    }
+
+    .main .about__wrapper {
+        float: none;
+        max-width: none;
+    }
+
+    .main .about__title {
+        text-align: center;
+    }
+
+    .main .about__text {
+        padding: 0 30px 30px;
+    }
+
+    .main .about {
+        padding: 30px 0;
+    }
+
+    .our-friends__item {
+        padding: 0;
+    }
+
+    .our-friends__more {
+        width: auto;
+    }
+
+    .our-friends__img {
+        height: 200px;
+    }
+
+    .our-friends__outer .button__prev {
+        left: -34px;
+        top: 46%;
+    }
+
+    .our-friends__outer .button__next {
+        right: -34px;
+        top: 46%;
+    }
+
+    .icons__container .icons__list li {
+        width: 46%;
+    }
+
+    .bank__container {
+        padding-top: 30px;;
+    }
+
+    .bank__container img {
+        width: 100%;
+        float: none;
+    }
+
+    .bank__wrapper {
+        float: none;
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .footer .contacts__container {
+        width: 100%;
+        padding: 30px;
+    }
+}
