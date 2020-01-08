@@ -55,22 +55,52 @@
 
     &__nav {
         @include b(768) {
-            display: none;
+           position: fixed;
+           z-index: 10;
+           background-color: #fff;
+           top: 0;
+           right: 0;
+           bottom: 0;
+           left: 0;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+           opacity: 0;
+           visibility: hidden;
+           transform: translateX(-100%);
+           @include trs;
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0);
+            }
         }
          
         &-list {
             display: flex;
             align-items: center;
             margin: 0 -17px;
+            @include b(768) {
+                display: block;
+            }
         }
 
         &-item {
             padding: 0 18px;
+            @include b(768) {
+                text-align: center;
+                padding: 10px 0;
+            }
 
             a {
                 font-family: $arial;
                 color: $white;
                 position: relative;
+                @include b(768) {
+                    color: $main-color;
+                    font-size: 26px;
+                }
 
                 &:before {
                     position: absolute;
@@ -101,12 +131,15 @@
            position: relative;
            width: 25px;
            height: 20px;
-           background-color: red;
            display: block;
+           z-index: 11;
 
            &.active {
+               opacity: 1;
+               visibility: visible;
 
                 span {
+                    background-color: $main-color;
 
                     &:nth-child(1) {
                         transform: rotate(-45deg);

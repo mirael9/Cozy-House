@@ -7,9 +7,15 @@ body {
     font-size: $main-fz;
     line-height: $main-lh;
     min-width: 320px;
-    box-sizing: border-box;
-    outline: none;
+    // box-sizing: border-box;
+    // outline: none;
     color: $main-color;
+    @include b (768) {
+        
+        &.overflow {
+            overflow: hidden;
+        }
+    }
 }
 
 *,

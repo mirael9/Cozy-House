@@ -1,0 +1,155 @@
+@import "../variables";
+@import "../mixins";
+
+.popup {
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(#fafafa, .1);
+    padding: 20px 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    @include b (768) {
+        overflow: auto;
+    }
+
+    &.active {
+        display: flex;
+    }
+    
+    &__outer {
+        max-height: calc(100vh - 40px);
+    }
+
+    &__box {
+        width: 1080px;
+        position: relative;
+        padding-top: 50px;
+        max-width: 100%;
+        @include b (1100) {
+            max-width: 970px;
+            width: auto;
+            padding-top: 60px;
+        }
+    }
+
+    &__wrap {
+        max-width: 970px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        background-color: #fafafa;
+        box-shadow: 0 2px 30px 5px rgba(13, 13, 13, .04);
+        overflow: hidden;
+        border-radius: 10px;
+        @include b (768) {
+            display: block;
+        }
+    }
+
+    &__img {
+        width: 48.5px;
+        @include b (768) {
+            width: auto;
+            max-width: 470px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        width: 51.5%;
+        padding: 60px 35px 60px 55px;
+        @include b (768) {
+            width: 100%;
+            padding: 40px 15px;
+        }
+
+    }
+
+    &__breed {
+        font-size: 20px;
+        margin-bottom: 20px;
+        display: block;
+        letter-spacing: 1.2px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        font-family: $arial;
+        letter-spacing: -.2px;
+    }
+
+    &__item {
+        font-size: 17px;
+        padding-left: 12px;
+        position: relative;
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+        letter-spacing: 1px;
+        
+        &:before {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 5px;
+            background-color: $beige;
+            border-radius: 50%;
+            left: 0;
+            top: 12px;
+        }
+
+        span {
+            font-size: 15px;
+            font-family: $arial;
+        }
+    }
+
+    &__close {
+         width: 50px;
+         height: 50px;
+         border: 2px solid $beige;
+         border-radius: 50%;
+         position: absolute;
+         right: 0;
+         top: 0;
+         background-color: #fff;
+    }
+
+    .close {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        width: 32px;
+        opacity: 1;
+        }
+
+        .close:hover {
+        opacity: 1;
+        }
+
+        .close:before, .close:after {
+        position: absolute;
+        top: 7px;
+        left: 15px;
+        content: ' ';
+        height: 20px;
+        width: 2px;
+        background-color: #333;
+        }
+
+        .close:before {
+        transform: rotate(45deg);
+        }
+
+        .close:after {
+        transform: rotate(-45deg);
+        }
+}
